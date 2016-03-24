@@ -101,7 +101,7 @@ extension ItemDetailsPlugin {
 // MARK: Plugin API Extensions
 
 extension ItemDetailsPlugin {
-    static func ItemDetailsAPIFactory() -> ItemDetailsAPI {
+    static func itemDetailsAPIFactory() -> ItemDetailsAPI {
         return ItemDetailsAPIPrivate()
     }
 }

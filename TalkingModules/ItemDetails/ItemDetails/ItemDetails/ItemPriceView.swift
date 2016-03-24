@@ -9,6 +9,7 @@
 import Foundation
 import ELCodable
 
+
 @objc
 public class ItemPriceView: UILabel {
     // the price that will be used for display.
@@ -22,6 +23,10 @@ public class ItemPriceView: UILabel {
             // build your attributed string from the 'data' that was passed in.
             // ...
             // PROFIT!!
+            // .. but since that's not the topic of this example, you get a plain old label.
+            if let data = _price {
+                text = "$\(data)"
+            }
         }
     }
     

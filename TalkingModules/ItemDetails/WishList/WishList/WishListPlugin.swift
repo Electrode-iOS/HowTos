@@ -17,7 +17,7 @@ public func pluginClass() -> Pluggable.Type {
 @objc
 public class WishListPlugin: NSObject, PluggableFeature {
     public var identifier: String {
-        return "com.walmart.wishlist"
+        return bundle().bundleIdentifier!
     }
     
     public var dependencies: [DependencyID]? {
@@ -30,7 +30,7 @@ public class WishListPlugin: NSObject, PluggableFeature {
     
     // Provides the default route to this plugin or feature.
     public func startup(supervisor: Supervisor) -> Route? {
-        //registerRoutes()
+        registerRoutes()
         return nil
     }
     
@@ -66,34 +66,32 @@ public class WishListPlugin: NSObject, PluggableFeature {
 
 // MARK: Route Registration
 
-/*extension WishListPlugin {
+extension WishListPlugin {
     private func registerRoutes() {
         
-        // this registers a route that will push an item detail screen in-place.  by in-place, i mean
-        // that it won't jump back to the main screen, it'll just add on to the current
-        // nav heirarchy.
-        
-        let listRoute = Route("item", type: .Other) { (variable) -> Any? in
+        // this registers a route to represent the wish list tab.
+        let listRoute = Route("list", type: .Static) { (variable) -> Any? in
             // variable will be nil here.
-            print(variable)
-            return nil
-            }.variable { (variable) -> Any? in
-                // variable should be the listContext here.
-                print(variable)
-                return nil
-            }.route("detail", type: .Push) { (variable) -> Any? in
-                print(variable)
-                // variable should STILL be the listContext.
-                let vc = ItemDetailViewController(nibName: "ItemDetailViewController", bundle: self.bundle())
-                
-                // i'm going to cheat a little and tickle the view to get it to load.  normally you'd set any data props, and then
-                // fill them in viewDidLoad().
-                vc.loadView()
-                vc.dataLabel.text = "Item Detail: \(variable)"
-                
-                return vc
+            
+            // pull our initial wish list controller
+            let vc = WishListViewController(nibName: "WishListViewController", bundle: self.bundle())
+            
+            // set up the tab bar appropriately.
+            let image = UIImage(named: "wishListIcon", inBundle: self.bundle(), compatibleWithTraitCollection: nil)
+            vc.tabBarItem = UITabBarItem(title: "Wish List", image: image, tag: 0)
+            
+            // wrap it in a UINavigation controller and send it back.
+            return UINavigationController(rootViewController: vc)
         }
         
         Router.sharedInstance.register(listRoute)
     }
-}*/
+}
+
+// MARK: Plugin API Extensions
+
+extension WishListPlugin {
+    static func wishListAPIFactory() -> WishListAPI {
+        return WishListAPIPrivate()
+    }
+}

@@ -24,6 +24,7 @@
 		CAF638E01CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638DF1CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift */; };
 		CAF638E41CA1F88000260FB8 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638E21CA1F88000260FB8 /* ItemDetailViewController.swift */; };
 		CAF638E51CA1F88000260FB8 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF638E31CA1F88000260FB8 /* ItemDetailViewController.xib */; };
+		CAF639661CA335DB00260FB8 /* WishList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF639631CA335D300260FB8 /* WishList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,20 @@
 			remoteGlobalIDString = 17088ED11C5010EA007ADE1B;
 			remoteInfo = ELWebServiceTests;
 		};
+		CAF639621CA335D300260FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CAB862571CA1B9550051F45A;
+			remoteInfo = WishList;
+		};
+		CAF639641CA335D300260FB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CAB862611CA1B9550051F45A;
+			remoteInfo = WishListTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +177,7 @@
 		CAF638DF1CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsAPIPrivate.swift; sourceTree = "<group>"; };
 		CAF638E21CA1F88000260FB8 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		CAF638E31CA1F88000260FB8 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WishList.xcodeproj; path = ../WishList/WishList.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF639661CA335DB00260FB8 /* WishList.framework in Frameworks */,
 				CAB863181CA1BAE20051F45A /* ELCodable.framework in Frameworks */,
 				CAB863191CA1BAE20051F45A /* ELFoundation.framework in Frameworks */,
 				CAB8631A1CA1BAE20051F45A /* ELLog.framework in Frameworks */,
@@ -230,6 +247,7 @@
 		CAB862981CA1BA800051F45A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */,
 				CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */,
 				CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */,
 				CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */,
@@ -318,6 +336,15 @@
 				CAF638E31CA1F88000260FB8 /* ItemDetailViewController.xib */,
 			);
 			name = Private;
+			sourceTree = "<group>";
+		};
+		CAF6395E1CA335D300260FB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF639631CA335D300260FB8 /* WishList.framework */,
+				CAF639651CA335D300260FB8 /* WishListTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +449,10 @@
 				{
 					ProductGroup = CAB862D11CA1BAB80051F45A /* Products */;
 					ProjectRef = CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */;
+				},
+				{
+					ProductGroup = CAF6395E1CA335D300260FB8 /* Products */;
+					ProjectRef = CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -536,6 +567,20 @@
 			fileType = wrapper.cfbundle;
 			path = ELWebServiceTests.xctest;
 			remoteRef = CAB862D71CA1BAB80051F45A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAF639631CA335D300260FB8 /* WishList.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WishList.framework;
+			remoteRef = CAF639621CA335D300260FB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAF639651CA335D300260FB8 /* WishListTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WishListTests.xctest;
+			remoteRef = CAF639641CA335D300260FB8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

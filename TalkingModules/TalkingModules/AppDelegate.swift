@@ -29,12 +29,10 @@ class AppDelegate: ApplicationSupervisor {
         loadPlugin(ItemDetails.pluginClass())
         loadPlugin(WishList.pluginClass())
         
-        // I know i'm not going to register any top level routes just yet, so 
-        // try to detect the navigator.
-        Router.sharedInstance.detectNavigator()
-        
         // start up the system!
         startup()
+
+        Router.sharedInstance.updateNavigator()
         
         return result
     }
