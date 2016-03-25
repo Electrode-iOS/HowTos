@@ -22,7 +22,6 @@
 		CAF639591CA3162700260FB8 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF639571CA3162700260FB8 /* WishListViewController.swift */; };
 		CAF6395A1CA3162700260FB8 /* WishListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF639581CA3162700260FB8 /* WishListViewController.xib */; };
 		CAF6395C1CA31C3100260FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF6395B1CA31C3100260FB8 /* Assets.xcassets */; };
-		CAF639701CA335EC00260FB8 /* ItemDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF6396D1CA335E500260FB8 /* ItemDetails.framework */; };
 		CAF6397B1CA44EA600260FB8 /* WishListAPIPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF6397A1CA44EA600260FB8 /* WishListAPIPrivate.swift */; };
 /* End PBXBuildFile section */
 
@@ -183,7 +182,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF639701CA335EC00260FB8 /* ItemDetails.framework in Frameworks */,
 				CAB8631E1CA1BAF00051F45A /* ELCodable.framework in Frameworks */,
 				CAB8631F1CA1BAF00051F45A /* ELFoundation.framework in Frameworks */,
 				CAB863201CA1BAF00051F45A /* ELLog.framework in Frameworks */,
