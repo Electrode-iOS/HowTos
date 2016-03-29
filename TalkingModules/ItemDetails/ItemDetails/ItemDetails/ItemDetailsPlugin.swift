@@ -9,6 +9,7 @@
 import Foundation
 import ELMaestro
 import ELRouter
+import FeatureAPIs
 
 // MARK: PluggableFeature conformance
 
@@ -62,6 +63,10 @@ public class ItemDetailsPlugin: NSObject, PluggableFeature {
     public func applicationDidReceiveMemoryWarning() {
         
     }
+    
+    public func pluginAPI() -> AnyObject? {
+        return ItemDetailsAPIPrivate()
+    }
 }
 
 // MARK: Route Registration
@@ -101,7 +106,5 @@ extension ItemDetailsPlugin {
 // MARK: Plugin API Extensions
 
 extension ItemDetailsPlugin {
-    static func itemDetailsAPIFactory() -> ItemDetailsAPI {
-        return ItemDetailsAPIPrivate()
-    }
+    
 }

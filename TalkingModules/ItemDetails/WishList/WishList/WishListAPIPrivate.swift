@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FeatureAPIs
 
 internal class WishListAPIPrivate: NSObject, WishListAPI {
     func addToListView(criteria: WishListCriteria, price: String, quantity: UInt) -> UIViewController {

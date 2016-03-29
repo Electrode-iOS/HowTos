@@ -10,9 +10,10 @@ import Foundation
 
 import ELFoundation
 import ELCodable
+import FeatureAPIs
 
 @objc
-public class ItemRatingView: UIView {
+public class ItemRatingStarsView: UIView {
     // the price that will be used for display.
     public var rating: Double? {
         get {

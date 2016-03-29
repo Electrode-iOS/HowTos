@@ -9,9 +9,10 @@
 import Foundation
 import ELCodable
 
+import FeatureAPIs
 
 @objc
-public class ItemPriceView: UILabel {
+public class ItemPriceLabel: UILabel {
     // the price that will be used for display.
     public var price: Decimal? {
         get {
@@ -34,6 +35,8 @@ public class ItemPriceView: UILabel {
         // compute the size of your frame based on the size given
         let someFrame = CGRectZero
         super.init(frame: someFrame)
+        
+        self.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1)
         
         _price = Decimal(price)
     }

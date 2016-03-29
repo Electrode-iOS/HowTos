@@ -7,18 +7,46 @@
 //
 
 import UIKit
+import ELMaestro
+import FeatureAPIs
 
 class WishListViewController: UIViewController {
+    
+    @IBOutlet var priceLabel: UILabel? {
+        
+        didSet {
+//            if let oldValue = oldValue {
+//                priceLabel?.frame = oldValue.frame
+//            }
+            if let _ = priceLabel {
+                view.addSubview(priceLabel!)
+            }
+        }
+    }
+    @IBOutlet var ratingsView: UIView?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        // Do any additional setup after loading the view.
+        let supervisor = ApplicationSupervisor.sharedInstance
+        let itemDetailsAPI = supervisor.pluginAPIForID(ItemDetailsID) as? ItemDetailsAPI
+        self.priceLabel = itemDetailsAPI?.priceView(3.5, size: CGSize(width: 50, height: 10))
+//        if let _ = priceLabel {
+//            view.addSubview(priceLabel!)
+//        }
     }
     
 

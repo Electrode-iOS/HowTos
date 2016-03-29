@@ -7,13 +7,15 @@
 //
 
 import Foundation
+import FeatureAPIs
 
-internal class ItemDetailsAPIPrivate: ItemDetailsAPI {
-    @objc func priceView(data: NSDecimalNumber, size: CGSize) -> ItemPriceView {
-        return ItemPriceView(price: NSDecimalNumber(double: 1.00), maxSize: CGSize(width: 100, height: 100))
+internal class ItemDetailsAPIPrivate: NSObject, ItemDetailsAPI {
+    
+    @objc func priceView(data: NSDecimalNumber, size: CGSize) -> UILabel {
+        return ItemPriceLabel(price: NSDecimalNumber(double: 1.00), maxSize: CGSize(width: 100, height: 100))
     }
     
-    @objc func ratingView(rating: Double, size: CGSize) -> ItemRatingView {
-        return ItemRatingView(rating: 3.5, maxSize: CGSize(width: 100, height: 100))
+    @objc func ratingView(rating: Double, size: CGSize) -> UIView {
+        return ItemRatingStarsView(rating: 3.5, maxSize: CGSize(width: 100, height: 100))
     }
 }

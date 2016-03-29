@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484A8B971CA9DD55002A0E34 /* FeatureAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */; };
 		CAB8622E1CA1B92C0051F45A /* ItemDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB8622D1CA1B92C0051F45A /* ItemDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAB862351CA1B92C0051F45A /* ItemDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8622A1CA1B92C0051F45A /* ItemDetails.framework */; };
 		CAB8623A1CA1B92C0051F45A /* ItemDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB862391CA1B92C0051F45A /* ItemDetailsTests.swift */; };
@@ -18,7 +19,6 @@
 		CAB8631D1CA1BAE20051F45A /* ELWebService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862D61CA1BAB80051F45A /* ELWebService.framework */; };
 		CAB8632D1CA1BC0B0051F45A /* ItemDetailsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8632C1CA1BC0B0051F45A /* ItemDetailsPlugin.swift */; };
 		CAB863331CA1BF8A0051F45A /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB863321CA1BF8A0051F45A /* ItemDetails.swift */; };
-		CAF638C91CA1EA9100260FB8 /* ItemDetailsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638C81CA1EA9100260FB8 /* ItemDetailsAPI.swift */; };
 		CAF638DA1CA1EC7C00260FB8 /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638D91CA1EC7C00260FB8 /* ItemPriceView.swift */; };
 		CAF638DC1CA1EF6100260FB8 /* ItemRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638DB1CA1EF6100260FB8 /* ItemRatingView.swift */; };
 		CAF638E01CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638DF1CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift */; };
@@ -156,6 +156,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureAPIs.framework; path = "../../../../FeatureAPIs/build/Debug-iphoneos/FeatureAPIs.framework"; sourceTree = "<group>"; };
 		CAB8622A1CA1B92C0051F45A /* ItemDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ItemDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8622D1CA1B92C0051F45A /* ItemDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetails.h; sourceTree = "<group>"; };
 		CAB8622F1CA1B92C0051F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,7 +171,6 @@
 		CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELWebService.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELWebService/ELWebService.xcodeproj; sourceTree = "<absolute>"; };
 		CAB8632C1CA1BC0B0051F45A /* ItemDetailsPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsPlugin.swift; sourceTree = "<group>"; };
 		CAB863321CA1BF8A0051F45A /* ItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
-		CAF638C81CA1EA9100260FB8 /* ItemDetailsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsAPI.swift; sourceTree = "<group>"; };
 		CAF638D91CA1EC7C00260FB8 /* ItemPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
 		CAF638DB1CA1EF6100260FB8 /* ItemRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRatingView.swift; sourceTree = "<group>"; };
 		CAF638DF1CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsAPIPrivate.swift; sourceTree = "<group>"; };
@@ -184,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484A8B971CA9DD55002A0E34 /* FeatureAPIs.framework in Frameworks */,
 				CAB863181CA1BAE20051F45A /* ELCodable.framework in Frameworks */,
 				CAB863191CA1BAE20051F45A /* ELFoundation.framework in Frameworks */,
 				CAB8631A1CA1BAE20051F45A /* ELLog.framework in Frameworks */,
@@ -207,6 +208,7 @@
 		CAB862201CA1B92C0051F45A = {
 			isa = PBXGroup;
 			children = (
+				484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */,
 				CAB862981CA1BA800051F45A /* Modules */,
 				CAB8622C1CA1B92C0051F45A /* ItemDetails */,
 				CAB862381CA1B92C0051F45A /* ItemDetailsTests */,
@@ -319,7 +321,6 @@
 				CAB8622D1CA1B92C0051F45A /* ItemDetails.h */,
 				CAB863321CA1BF8A0051F45A /* ItemDetails.swift */,
 				CAB8632C1CA1BC0B0051F45A /* ItemDetailsPlugin.swift */,
-				CAF638C81CA1EA9100260FB8 /* ItemDetailsAPI.swift */,
 				CAF638D91CA1EC7C00260FB8 /* ItemPriceView.swift */,
 				CAF638DB1CA1EF6100260FB8 /* ItemRatingView.swift */,
 			);
@@ -606,7 +607,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF638C91CA1EA9100260FB8 /* ItemDetailsAPI.swift in Sources */,
 				CAF638E41CA1F88000260FB8 /* ItemDetailViewController.swift in Sources */,
 				CAB8632D1CA1BC0B0051F45A /* ItemDetailsPlugin.swift in Sources */,
 				CAF638E01CA1F22700260FB8 /* ItemDetailsAPIPrivate.swift in Sources */,
