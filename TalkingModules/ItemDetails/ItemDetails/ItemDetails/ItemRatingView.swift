@@ -31,7 +31,7 @@ public class ItemRatingStarsView: UIView {
         let someFrame = CGRectZero
         super.init(frame: someFrame)
         
-        _rating = rating
+        self.rating = rating
     }
     
     required public init?(coder aDecoder: NSCoder) {

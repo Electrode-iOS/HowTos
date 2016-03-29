@@ -38,7 +38,7 @@ public class ItemPriceLabel: UILabel {
         
         self.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1)
         
-        _price = Decimal(price)
+        self.price = Decimal(price)
     }
     
     required public init?(coder aDecoder: NSCoder) {

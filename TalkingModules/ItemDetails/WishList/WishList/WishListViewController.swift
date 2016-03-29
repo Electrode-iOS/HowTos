@@ -8,24 +8,14 @@
 
 import UIKit
 import ELMaestro
+import ELFoundation
 import FeatureAPIs
 
 class WishListViewController: UIViewController {
     
-    @IBOutlet var priceLabel: UILabel? {
-        
-        didSet {
-//            if let oldValue = oldValue {
-//                priceLabel?.frame = oldValue.frame
-//            }
-            if let _ = priceLabel {
-                view.addSubview(priceLabel!)
-            }
-        }
-    }
+    @IBOutlet var priceLabel: UILabel?
     @IBOutlet var ratingsView: UIView?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +33,8 @@ class WishListViewController: UIViewController {
         // Do any additional setup after loading the view.
         let supervisor = ApplicationSupervisor.sharedInstance
         let itemDetailsAPI = supervisor.pluginAPIForID(ItemDetailsID) as? ItemDetailsAPI
-        self.priceLabel = itemDetailsAPI?.priceView(3.5, size: CGSize(width: 50, height: 10))
+        let priceLabel = itemDetailsAPI?.priceView(3.5, size: CGSize(width: 50, height: 10))
+        view.replaceView(self.priceLabel!, newView: priceLabel!)
 //        if let _ = priceLabel {
 //            view.addSubview(priceLabel!)
 //        }

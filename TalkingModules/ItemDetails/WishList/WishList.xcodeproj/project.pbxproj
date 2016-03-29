@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		484A8B9B1CA9DD5C002A0E34 /* FeatureAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484A8B9A1CA9DD5C002A0E34 /* FeatureAPIs.framework */; };
+		CA69BE171CAAE8A600204B18 /* FeatureAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */; };
 		CAB8625B1CA1B9550051F45A /* WishList.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB8625A1CA1B9550051F45A /* WishList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAB862621CA1B9550051F45A /* WishList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862571CA1B9550051F45A /* WishList.framework */; };
 		CAB862671CA1B9550051F45A /* WishListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB862661CA1B9550051F45A /* WishListTests.swift */; };
@@ -155,7 +155,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		484A8B9A1CA9DD5C002A0E34 /* FeatureAPIs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureAPIs.framework; path = "../../../../FeatureAPIs/build/Debug-iphoneos/FeatureAPIs.framework"; sourceTree = "<group>"; };
+		CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureAPIs.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TalkingModules-erxsraaerermcdakclnhfuivdvkf/Build/Products/Debug-iphonesimulator/FeatureAPIs.framework"; sourceTree = "<group>"; };
 		CAB862571CA1B9550051F45A /* WishList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WishList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8625A1CA1B9550051F45A /* WishList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishList.h; sourceTree = "<group>"; };
 		CAB8625C1CA1B9550051F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484A8B9B1CA9DD5C002A0E34 /* FeatureAPIs.framework in Frameworks */,
+				CA69BE171CAAE8A600204B18 /* FeatureAPIs.framework in Frameworks */,
 				CAB8631E1CA1BAF00051F45A /* ELCodable.framework in Frameworks */,
 				CAB8631F1CA1BAF00051F45A /* ELFoundation.framework in Frameworks */,
 				CAB863201CA1BAF00051F45A /* ELLog.framework in Frameworks */,
@@ -206,7 +206,7 @@
 		CAB8624D1CA1B9550051F45A = {
 			isa = PBXGroup;
 			children = (
-				484A8B9A1CA9DD5C002A0E34 /* FeatureAPIs.framework */,
+				CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */,
 				CAB862991CA1BA880051F45A /* Modules */,
 				CAB862591CA1B9550051F45A /* WishList */,
 				CAB862651CA1B9550051F45A /* WishListTests */,
