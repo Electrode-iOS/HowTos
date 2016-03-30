@@ -7,18 +7,40 @@
 //
 
 import UIKit
+import ELMaestro
+import ELFoundation
+import FeatureAPIs
 
 class WishListViewController: UIViewController {
-
+    
+    @IBOutlet var productLabel: UILabel?
+    @IBOutlet var priceLabel: UILabel?
+    @IBOutlet var ratingsView: UIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        // Do any additional setup after loading the view.
+        let supervisor = ApplicationSupervisor.sharedInstance
+        let itemDetailsAPI = supervisor.pluginAPIForID(ItemDetailsID) as? ItemDetailsAPI
+        let priceLabel = itemDetailsAPI?.priceView(3.5, size: CGSize(width: 50, height: 10))
+        view.replaceView(self.priceLabel!, newView: priceLabel!)
+        
+        let tempRatingsView = itemDetailsAPI?.ratingView(3.5, size: CGSize(width: 80, height: 12))
+        view.replaceView(ratingsView!, newView: tempRatingsView!)
+        
+        productLabel?.text = "Brando's Awesome Widget"
     }
     
 

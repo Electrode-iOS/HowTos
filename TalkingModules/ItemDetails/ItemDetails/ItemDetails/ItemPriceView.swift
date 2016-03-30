@@ -9,9 +9,10 @@
 import Foundation
 import ELCodable
 
+import FeatureAPIs
 
 @objc
-public class ItemPriceView: UILabel {
+public class ItemPriceLabel: UILabel {
     // the price that will be used for display.
     public var price: Decimal? {
         get {
@@ -35,7 +36,9 @@ public class ItemPriceView: UILabel {
         let someFrame = CGRectZero
         super.init(frame: someFrame)
         
-        _price = Decimal(price)
+        self.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1)
+        
+        self.price = Decimal(price)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -43,4 +46,6 @@ public class ItemPriceView: UILabel {
     }
     
     private var _price: Decimal? = nil
+    
+    
 }

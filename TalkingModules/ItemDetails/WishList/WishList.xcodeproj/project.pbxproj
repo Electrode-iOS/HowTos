@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA69BE171CAAE8A600204B18 /* FeatureAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */; };
 		CAB8625B1CA1B9550051F45A /* WishList.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB8625A1CA1B9550051F45A /* WishList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAB862621CA1B9550051F45A /* WishList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862571CA1B9550051F45A /* WishList.framework */; };
 		CAB862671CA1B9550051F45A /* WishListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB862661CA1B9550051F45A /* WishListTests.swift */; };
@@ -18,7 +19,6 @@
 		CAB863231CA1BAF00051F45A /* ELWebService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB863151CA1BAC10051F45A /* ELWebService.framework */; };
 		CAB8632F1CA1BC920051F45A /* WishListPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8632E1CA1BC920051F45A /* WishListPlugin.swift */; };
 		CAB863311CA1BF2A0051F45A /* WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB863301CA1BF2A0051F45A /* WishList.swift */; };
-		CAB8633A1CA1E12F0051F45A /* WishListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB863391CA1E12F0051F45A /* WishListAPI.swift */; };
 		CAF639591CA3162700260FB8 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF639571CA3162700260FB8 /* WishListViewController.swift */; };
 		CAF6395A1CA3162700260FB8 /* WishListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF639581CA3162700260FB8 /* WishListViewController.xib */; };
 		CAF6395C1CA31C3100260FB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF6395B1CA31C3100260FB8 /* Assets.xcassets */; };
@@ -155,6 +155,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureAPIs.framework; path = "../../../../../../Library/Developer/Xcode/DerivedData/TalkingModules-erxsraaerermcdakclnhfuivdvkf/Build/Products/Debug-iphonesimulator/FeatureAPIs.framework"; sourceTree = "<group>"; };
 		CAB862571CA1B9550051F45A /* WishList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WishList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8625A1CA1B9550051F45A /* WishList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WishList.h; sourceTree = "<group>"; };
 		CAB8625C1CA1B9550051F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,7 +170,6 @@
 		CAB862E81CA1BAC10051F45A /* ELCodable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELCodable.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELCodable/ELCodable.xcodeproj; sourceTree = "<absolute>"; };
 		CAB8632E1CA1BC920051F45A /* WishListPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListPlugin.swift; sourceTree = "<group>"; };
 		CAB863301CA1BF2A0051F45A /* WishList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishList.swift; sourceTree = "<group>"; };
-		CAB863391CA1E12F0051F45A /* WishListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListAPI.swift; sourceTree = "<group>"; };
 		CAF639571CA3162700260FB8 /* WishListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		CAF639581CA3162700260FB8 /* WishListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WishListViewController.xib; sourceTree = "<group>"; };
 		CAF6395B1CA31C3100260FB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA69BE171CAAE8A600204B18 /* FeatureAPIs.framework in Frameworks */,
 				CAB8631E1CA1BAF00051F45A /* ELCodable.framework in Frameworks */,
 				CAB8631F1CA1BAF00051F45A /* ELFoundation.framework in Frameworks */,
 				CAB863201CA1BAF00051F45A /* ELLog.framework in Frameworks */,
@@ -205,6 +206,7 @@
 		CAB8624D1CA1B9550051F45A = {
 			isa = PBXGroup;
 			children = (
+				CA69BE161CAAE8A600204B18 /* FeatureAPIs.framework */,
 				CAB862991CA1BA880051F45A /* Modules */,
 				CAB862591CA1B9550051F45A /* WishList */,
 				CAB862651CA1B9550051F45A /* WishListTests */,
@@ -316,7 +318,6 @@
 			children = (
 				CAB8625A1CA1B9550051F45A /* WishList.h */,
 				CAB863301CA1BF2A0051F45A /* WishList.swift */,
-				CAB863391CA1E12F0051F45A /* WishListAPI.swift */,
 				CAB8632E1CA1BC920051F45A /* WishListPlugin.swift */,
 			);
 			name = Public;
@@ -604,7 +605,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB8633A1CA1E12F0051F45A /* WishListAPI.swift in Sources */,
 				CAF6397B1CA44EA600260FB8 /* WishListAPIPrivate.swift in Sources */,
 				CAF639591CA3162700260FB8 /* WishListViewController.swift in Sources */,
 				CAB863311CA1BF2A0051F45A /* WishList.swift in Sources */,

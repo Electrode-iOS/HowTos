@@ -9,6 +9,7 @@
 import Foundation
 import ELMaestro
 import ELRouter
+import FeatureAPIs
 
 public func pluginClass() -> Pluggable.Type {
     return WishListPlugin.self
