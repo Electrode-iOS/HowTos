@@ -50,20 +50,6 @@
 			remoteGlobalIDString = CA69BD9A1CA9CE6600204B18;
 			remoteInfo = FeatureAPIsTests;
 		};
-		48D8591A1CAB2B7100416EB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07C5A03F1C472F4600157A12;
-			remoteInfo = WalmartIOSShared;
-		};
-		48D8591C1CAB2B7100416EB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07C5A0491C472F4600157A12;
-			remoteInfo = WalmartIOSSharedTests;
-		};
 		CAB8618C1CA1B2980051F45A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAB8616D1CA1B2980051F45A /* Project object */;
@@ -288,6 +274,20 @@
 			remoteGlobalIDString = CAB862291CA1B92C0051F45A;
 			remoteInfo = ItemDetails;
 		};
+		E1C685B61CAC82D200EF6570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07C5A03F1C472F4600157A12;
+			remoteInfo = WalmartIOSShared;
+		};
+		E1C685B81CAC82D200EF6570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07C5A0491C472F4600157A12;
+			remoteInfo = WalmartIOSSharedTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -379,15 +379,6 @@
 			children = (
 				484A8B311CA9D79F002A0E34 /* FeatureAPIs.framework */,
 				484A8B331CA9D79F002A0E34 /* FeatureAPIsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		48D859091CAB2B7100416EB4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				48D8591B1CAB2B7100416EB4 /* WalmartIOSShared.framework */,
-				48D8591D1CAB2B7100416EB4 /* WalmartIOSSharedTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -547,6 +538,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E1C685B21CAC82D200EF6570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1C685B71CAC82D200EF6570 /* WalmartIOSShared.framework */,
+				E1C685B91CAC82D200EF6570 /* WalmartIOSSharedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -685,7 +685,7 @@
 					ProjectRef = CAB862441CA1B9400051F45A /* ItemDetails.xcodeproj */;
 				},
 				{
-					ProductGroup = 48D859091CAB2B7100416EB4 /* Products */;
+					ProductGroup = E1C685B21CAC82D200EF6570 /* Products */;
 					ProjectRef = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
 				},
 				{
@@ -715,20 +715,6 @@
 			fileType = wrapper.cfbundle;
 			path = FeatureAPIsTests.xctest;
 			remoteRef = 484A8B321CA9D79F002A0E34 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		48D8591B1CAB2B7100416EB4 /* WalmartIOSShared.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = WalmartIOSShared.framework;
-			remoteRef = 48D8591A1CAB2B7100416EB4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		48D8591D1CAB2B7100416EB4 /* WalmartIOSSharedTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WalmartIOSSharedTests.xctest;
-			remoteRef = 48D8591C1CAB2B7100416EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		CAB861B01CA1B4350051F45A /* ELDispatch.framework */ = {
@@ -876,6 +862,20 @@
 			fileType = wrapper.cfbundle;
 			path = WishListTests.xctest;
 			remoteRef = CAB862781CA1B97D0051F45A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1C685B71CAC82D200EF6570 /* WalmartIOSShared.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WalmartIOSShared.framework;
+			remoteRef = E1C685B61CAC82D200EF6570 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1C685B91CAC82D200EF6570 /* WalmartIOSSharedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WalmartIOSSharedTests.xctest;
+			remoteRef = E1C685B81CAC82D200EF6570 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1103,7 +1103,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TalkingModules/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1116,7 +1116,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TalkingModules/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModules;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1128,6 +1128,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TalkingModulesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModulesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1140,6 +1141,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TalkingModulesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModulesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1151,6 +1153,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = TalkingModulesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModulesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1162,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = TalkingModulesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.walmart.TalkingModulesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
