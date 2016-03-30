@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		484A8B971CA9DD55002A0E34 /* FeatureAPIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */; };
+		48D859741CAB2BD700416EB4 /* WalmartIOSShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D859731CAB2BD700416EB4 /* WalmartIOSShared.framework */; };
 		CAB8622E1CA1B92C0051F45A /* ItemDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB8622D1CA1B92C0051F45A /* ItemDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAB862351CA1B92C0051F45A /* ItemDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8622A1CA1B92C0051F45A /* ItemDetails.framework */; };
 		CAB8623A1CA1B92C0051F45A /* ItemDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB862391CA1B92C0051F45A /* ItemDetailsTests.swift */; };
@@ -157,6 +158,7 @@
 
 /* Begin PBXFileReference section */
 		484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureAPIs.framework; path = "../../../../FeatureAPIs/build/Debug-iphoneos/FeatureAPIs.framework"; sourceTree = "<group>"; };
+		48D859731CAB2BD700416EB4 /* WalmartIOSShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WalmartIOSShared.framework; path = "../../../../WalmartIOSShared/build/Debug-iphoneos/WalmartIOSShared.framework"; sourceTree = "<group>"; };
 		CAB8622A1CA1B92C0051F45A /* ItemDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ItemDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB8622D1CA1B92C0051F45A /* ItemDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemDetails.h; sourceTree = "<group>"; };
 		CAB8622F1CA1B92C0051F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D859741CAB2BD700416EB4 /* WalmartIOSShared.framework in Frameworks */,
 				484A8B971CA9DD55002A0E34 /* FeatureAPIs.framework in Frameworks */,
 				CAB863181CA1BAE20051F45A /* ELCodable.framework in Frameworks */,
 				CAB863191CA1BAE20051F45A /* ELFoundation.framework in Frameworks */,
@@ -208,6 +211,7 @@
 		CAB862201CA1B92C0051F45A = {
 			isa = PBXGroup;
 			children = (
+				48D859731CAB2BD700416EB4 /* WalmartIOSShared.framework */,
 				484A8B961CA9DD55002A0E34 /* FeatureAPIs.framework */,
 				CAB862981CA1BA800051F45A /* Modules */,
 				CAB8622C1CA1B92C0051F45A /* ItemDetails */,

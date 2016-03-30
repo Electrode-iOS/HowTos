@@ -13,6 +13,7 @@ import FeatureAPIs
 
 class WishListViewController: UIViewController {
     
+    @IBOutlet var productLabel: UILabel?
     @IBOutlet var priceLabel: UILabel?
     @IBOutlet var ratingsView: UIView?
     
@@ -35,9 +36,11 @@ class WishListViewController: UIViewController {
         let itemDetailsAPI = supervisor.pluginAPIForID(ItemDetailsID) as? ItemDetailsAPI
         let priceLabel = itemDetailsAPI?.priceView(3.5, size: CGSize(width: 50, height: 10))
         view.replaceView(self.priceLabel!, newView: priceLabel!)
-//        if let _ = priceLabel {
-//            view.addSubview(priceLabel!)
-//        }
+        
+        let tempRatingsView = itemDetailsAPI?.ratingView(3.5, size: CGSize(width: 80, height: 12))
+        view.replaceView(ratingsView!, newView: tempRatingsView!)
+        
+        productLabel?.text = "Brando's Awesome Widget"
     }
     
 

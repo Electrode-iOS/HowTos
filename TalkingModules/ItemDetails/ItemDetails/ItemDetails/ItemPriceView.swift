@@ -46,4 +46,6 @@ public class ItemPriceLabel: UILabel {
     }
     
     private var _price: Decimal? = nil
+    
+    
 }

@@ -8,14 +8,15 @@
 
 import Foundation
 import FeatureAPIs
+import WalmartIOSShared
 
 internal class ItemDetailsAPIPrivate: NSObject, ItemDetailsAPI {
     
     @objc func priceView(data: NSDecimalNumber, size: CGSize) -> UILabel {
-        return ItemPriceLabel(price: data, maxSize: CGSize(width: 100, height: 100))
+        return ItemPriceLabel(price: data, maxSize: CGSize(width: size.width, height: size.height))
     }
     
     @objc func ratingView(rating: Double, size: CGSize) -> UIView {
-        return ItemRatingStarsView(rating: rating, maxSize: CGSize(width: 100, height: 100))
+        return ItemRatingStarsView(rating: rating, maxSize: CGSize(width: size.width, height: size.height))
     }
 }

@@ -50,6 +50,20 @@
 			remoteGlobalIDString = CA69BD9A1CA9CE6600204B18;
 			remoteInfo = FeatureAPIsTests;
 		};
+		48D8591A1CAB2B7100416EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07C5A03F1C472F4600157A12;
+			remoteInfo = WalmartIOSShared;
+		};
+		48D8591C1CAB2B7100416EB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07C5A0491C472F4600157A12;
+			remoteInfo = WalmartIOSSharedTests;
+		};
 		CAB8618C1CA1B2980051F45A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CAB8616D1CA1B2980051F45A /* Project object */;
@@ -300,6 +314,7 @@
 
 /* Begin PBXFileReference section */
 		484A8B211CA9D79F002A0E34 /* FeatureAPIs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FeatureAPIs.xcodeproj; path = ../../FeatureAPIs/FeatureAPIs.xcodeproj; sourceTree = "<group>"; };
+		48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WalmartIOSShared.xcodeproj; path = ../../WalmartIOSShared/WalmartIOSShared.xcodeproj; sourceTree = "<group>"; };
 		CAB861751CA1B2980051F45A /* TalkingModules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkingModules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB861781CA1B2980051F45A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB8617A1CA1B2980051F45A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -368,6 +383,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		48D859091CAB2B7100416EB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48D8591B1CAB2B7100416EB4 /* WalmartIOSShared.framework */,
+				48D8591D1CAB2B7100416EB4 /* WalmartIOSSharedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CAB8616C1CA1B2980051F45A = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +448,7 @@
 		CAB861A81CA1B4220051F45A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */,
 				484A8B211CA9D79F002A0E34 /* FeatureAPIs.xcodeproj */,
 				CAB862711CA1B97D0051F45A /* WishList.xcodeproj */,
 				CAB862441CA1B9400051F45A /* ItemDetails.xcodeproj */,
@@ -660,6 +685,10 @@
 					ProjectRef = CAB862441CA1B9400051F45A /* ItemDetails.xcodeproj */;
 				},
 				{
+					ProductGroup = 48D859091CAB2B7100416EB4 /* Products */;
+					ProjectRef = 48D859081CAB2B7100416EB4 /* WalmartIOSShared.xcodeproj */;
+				},
+				{
 					ProductGroup = CAB862721CA1B97D0051F45A /* Products */;
 					ProjectRef = CAB862711CA1B97D0051F45A /* WishList.xcodeproj */;
 				},
@@ -686,6 +715,20 @@
 			fileType = wrapper.cfbundle;
 			path = FeatureAPIsTests.xctest;
 			remoteRef = 484A8B321CA9D79F002A0E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48D8591B1CAB2B7100416EB4 /* WalmartIOSShared.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WalmartIOSShared.framework;
+			remoteRef = 48D8591A1CAB2B7100416EB4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		48D8591D1CAB2B7100416EB4 /* WalmartIOSSharedTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WalmartIOSSharedTests.xctest;
+			remoteRef = 48D8591C1CAB2B7100416EB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		CAB861B01CA1B4350051F45A /* ELDispatch.framework */ = {

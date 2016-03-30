@@ -11,6 +11,7 @@ import Foundation
 import ELFoundation
 import ELCodable
 import FeatureAPIs
+import WalmartIOSShared
 
 @objc
 public class ItemRatingStarsView: UIView {
@@ -22,13 +23,13 @@ public class ItemRatingStarsView: UIView {
         
         set(value) {
             _rating = value
-            setNeedsDisplay()
+            buildStars()
         }
     }
     
     init(rating: Double, maxSize: CGSize) {
         // compute the size of your frame based on the size given
-        let someFrame = CGRectZero
+        let someFrame = CGRect(x: 0, y: 0, width: maxSize.width, height: maxSize.height)
         super.init(frame: someFrame)
         
         self.rating = rating
@@ -38,14 +39,28 @@ public class ItemRatingStarsView: UIView {
         super.init(coder: aDecoder)
     }
     
-    override public func drawRect(rect: CGRect) {
-        // draw your starts here based on _rating.
-        
-        // maybe if rating is nil, explode.  i dunno.
-        if rating == nil {
-            exceptionFailure("ItemRatingView: Rating is still nil!")
-        }
-    }
+//    override public func drawRect(rect: CGRect) {
+//        // draw your starts here based on _rating.
+//        
+//        // maybe if rating is nil, explode.  i dunno.
+//        if rating == nil {
+//            exceptionFailure("ItemRatingView: Rating is still nil!")
+//        }
+//    }
     
     private var _rating: Double? = nil
+    private var starsView: StarsView? = nil
+    
+    private func buildStars() {
+        if let _ = starsView {
+            starsView!.removeFromSuperview()
+        }
+        
+        starsView = StarsView(frame: self.bounds)
+        if let tempRating = _rating {
+            starsView!.rating = CGFloat(tempRating)
+        }
+        
+        addSubview(starsView!)
+    }
 }
