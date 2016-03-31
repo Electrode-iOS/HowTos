@@ -12,12 +12,6 @@
 		CAB8622E1CA1B92C0051F45A /* ItemDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB8622D1CA1B92C0051F45A /* ItemDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAB862351CA1B92C0051F45A /* ItemDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB8622A1CA1B92C0051F45A /* ItemDetails.framework */; };
 		CAB8623A1CA1B92C0051F45A /* ItemDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB862391CA1B92C0051F45A /* ItemDetailsTests.swift */; };
-		CAB863181CA1BAE20051F45A /* ELCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862A01CA1BA990051F45A /* ELCodable.framework */; };
-		CAB863191CA1BAE20051F45A /* ELFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862C91CA1BAB20051F45A /* ELFoundation.framework */; };
-		CAB8631A1CA1BAE20051F45A /* ELLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862BC1CA1BAAB0051F45A /* ELLog.framework */; };
-		CAB8631B1CA1BAE20051F45A /* ELMaestro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862A91CA1BA9F0051F45A /* ELMaestro.framework */; };
-		CAB8631C1CA1BAE20051F45A /* ELRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862B21CA1BAA50051F45A /* ELRouter.framework */; };
-		CAB8631D1CA1BAE20051F45A /* ELWebService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB862D61CA1BAB80051F45A /* ELWebService.framework */; };
 		CAB8632D1CA1BC0B0051F45A /* ItemDetailsPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8632C1CA1BC0B0051F45A /* ItemDetailsPlugin.swift */; };
 		CAB863331CA1BF8A0051F45A /* ItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB863321CA1BF8A0051F45A /* ItemDetails.swift */; };
 		CAF638DA1CA1EC7C00260FB8 /* ItemPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF638D91CA1EC7C00260FB8 /* ItemPriceView.swift */; };
@@ -34,111 +28,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = CAB862291CA1B92C0051F45A;
 			remoteInfo = ItemDetails;
-		};
-		CAB8629F1CA1BA990051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA0C9F161BF4AD08006459C7;
-			remoteInfo = ELCodable;
-		};
-		CAB862A11CA1BA990051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA0C9F201BF4AD08006459C7;
-			remoteInfo = ELCodableTests;
-		};
-		CAB862A81CA1BA9F0051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862A31CA1BA9F0051F45A /* ELMaestro.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA2079731BB323B0005353D9;
-			remoteInfo = ELMaestro;
-		};
-		CAB862AA1CA1BA9F0051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862A31CA1BA9F0051F45A /* ELMaestro.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA20797E1BB323B0005353D9;
-			remoteInfo = ELMaestroTests;
-		};
-		CAB862B11CA1BAA50051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862AC1CA1BAA50051F45A /* ELRouter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA3930DB1BD011E90021CD95;
-			remoteInfo = ELRouter;
-		};
-		CAB862B31CA1BAA50051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862AC1CA1BAA50051F45A /* ELRouter.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA39313C1BD59A370021CD95;
-			remoteInfo = ELRouterTests;
-		};
-		CAB862BB1CA1BAAB0051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA8D47BB1AAE6FF50028B74D;
-			remoteInfo = ELLog;
-		};
-		CAB862BD1CA1BAAB0051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA8D47C61AAE6FF50028B74D;
-			remoteInfo = ELLogTests;
-		};
-		CAB862BF1CA1BAAB0051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA2410631AF966F600AA4410;
-			remoteInfo = ELLog_osx;
-		};
-		CAB862C81CA1BAB20051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CACF2A0A1A9614D20084EFAE;
-			remoteInfo = ELFoundation;
-		};
-		CAB862CA1CA1BAB20051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CACF2A151A9614D20084EFAE;
-			remoteInfo = ELFoundationTests;
-		};
-		CAB862CC1CA1BAB20051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA8CD55A1B7A9DCA00DA8BF7;
-			remoteInfo = ELFoundation_osx;
-		};
-		CAB862CE1CA1BAB20051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA8CD5631B7A9DCB00DA8BF7;
-			remoteInfo = ELFoundation_osxTests;
-		};
-		CAB862D51CA1BAB80051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 179C5C5E1AB079980047169F;
-			remoteInfo = ELWebService;
-		};
-		CAB862D71CA1BAB80051F45A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 17088ED11C5010EA007ADE1B;
-			remoteInfo = ELWebServiceTests;
 		};
 		CAF639621CA335D300260FB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -165,12 +54,12 @@
 		CAB862341CA1B92C0051F45A /* ItemDetailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItemDetailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB862391CA1B92C0051F45A /* ItemDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsTests.swift; sourceTree = "<group>"; };
 		CAB8623B1CA1B92C0051F45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELCodable.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELCodable/ELCodable.xcodeproj; sourceTree = "<absolute>"; };
-		CAB862A31CA1BA9F0051F45A /* ELMaestro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELMaestro.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELMaestro/ELMaestro.xcodeproj; sourceTree = "<absolute>"; };
-		CAB862AC1CA1BAA50051F45A /* ELRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELRouter.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELRouter/ELRouter.xcodeproj; sourceTree = "<absolute>"; };
-		CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELLog.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELLog/ELLog.xcodeproj; sourceTree = "<absolute>"; };
-		CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELFoundation.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELFoundation/ELFoundation.xcodeproj; sourceTree = "<absolute>"; };
-		CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELWebService.xcodeproj; path = /Users/brandon/work/Libraries/HowTos/TalkingModules/../../ELWebService/ELWebService.xcodeproj; sourceTree = "<absolute>"; };
+		CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELCodable.xcodeproj; path = ../../../../ELCodable/ELCodable.xcodeproj; sourceTree = "<group>"; };
+		CAB862A31CA1BA9F0051F45A /* ELMaestro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELMaestro.xcodeproj; path = ../../../../ELMaestro/ELMaestro.xcodeproj; sourceTree = "<group>"; };
+		CAB862AC1CA1BAA50051F45A /* ELRouter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELRouter.xcodeproj; path = ../../../../ELRouter/ELRouter.xcodeproj; sourceTree = "<group>"; };
+		CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELLog.xcodeproj; path = /Users/janine/Documents/Projects/ELLog/ELLog.xcodeproj; sourceTree = "<absolute>"; };
+		CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELFoundation.xcodeproj; path = ../../../../ELFoundation/ELFoundation.xcodeproj; sourceTree = "<group>"; };
+		CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ELWebService.xcodeproj; path = ../../../../ELWebService/ELWebService.xcodeproj; sourceTree = "<group>"; };
 		CAB8632C1CA1BC0B0051F45A /* ItemDetailsPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsPlugin.swift; sourceTree = "<group>"; };
 		CAB863321CA1BF8A0051F45A /* ItemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetails.swift; sourceTree = "<group>"; };
 		CAF638D91CA1EC7C00260FB8 /* ItemPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPriceView.swift; sourceTree = "<group>"; };
@@ -188,12 +77,6 @@
 			files = (
 				48D859741CAB2BD700416EB4 /* WalmartIOSShared.framework in Frameworks */,
 				484A8B971CA9DD55002A0E34 /* FeatureAPIs.framework in Frameworks */,
-				CAB863181CA1BAE20051F45A /* ELCodable.framework in Frameworks */,
-				CAB863191CA1BAE20051F45A /* ELFoundation.framework in Frameworks */,
-				CAB8631A1CA1BAE20051F45A /* ELLog.framework in Frameworks */,
-				CAB8631B1CA1BAE20051F45A /* ELMaestro.framework in Frameworks */,
-				CAB8631C1CA1BAE20051F45A /* ELRouter.framework in Frameworks */,
-				CAB8631D1CA1BAE20051F45A /* ELWebService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,63 +143,6 @@
 				CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */,
 			);
 			name = Modules;
-			sourceTree = "<group>";
-		};
-		CAB8629B1CA1BA990051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862A01CA1BA990051F45A /* ELCodable.framework */,
-				CAB862A21CA1BA990051F45A /* ELCodableTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAB862A41CA1BA9F0051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862A91CA1BA9F0051F45A /* ELMaestro.framework */,
-				CAB862AB1CA1BA9F0051F45A /* ELMaestroTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAB862AD1CA1BAA50051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862B21CA1BAA50051F45A /* ELRouter.framework */,
-				CAB862B41CA1BAA50051F45A /* ELRouterTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAB862B61CA1BAAB0051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862BC1CA1BAAB0051F45A /* ELLog.framework */,
-				CAB862BE1CA1BAAB0051F45A /* ELLogTests.xctest */,
-				CAB862C01CA1BAAB0051F45A /* ELLog.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAB862C21CA1BAB20051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862C91CA1BAB20051F45A /* ELFoundation.framework */,
-				CAB862CB1CA1BAB20051F45A /* ELFoundationTests.xctest */,
-				CAB862CD1CA1BAB20051F45A /* ELFoundation.framework */,
-				CAB862CF1CA1BAB20051F45A /* ELFoundation_osxTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CAB862D11CA1BAB80051F45A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAB862D61CA1BAB80051F45A /* ELWebService.framework */,
-				CAB862D81CA1BAB80051F45A /* ELWebServiceTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CAF638DD1CA1F1D200260FB8 /* Public */ = {
@@ -430,30 +256,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = CAB8629B1CA1BA990051F45A /* Products */;
-					ProjectRef = CAB8629A1CA1BA990051F45A /* ELCodable.xcodeproj */;
-				},
-				{
-					ProductGroup = CAB862C21CA1BAB20051F45A /* Products */;
-					ProjectRef = CAB862C11CA1BAB20051F45A /* ELFoundation.xcodeproj */;
-				},
-				{
-					ProductGroup = CAB862B61CA1BAAB0051F45A /* Products */;
-					ProjectRef = CAB862B51CA1BAAB0051F45A /* ELLog.xcodeproj */;
-				},
-				{
-					ProductGroup = CAB862A41CA1BA9F0051F45A /* Products */;
-					ProjectRef = CAB862A31CA1BA9F0051F45A /* ELMaestro.xcodeproj */;
-				},
-				{
-					ProductGroup = CAB862AD1CA1BAA50051F45A /* Products */;
-					ProjectRef = CAB862AC1CA1BAA50051F45A /* ELRouter.xcodeproj */;
-				},
-				{
-					ProductGroup = CAB862D11CA1BAB80051F45A /* Products */;
-					ProjectRef = CAB862D01CA1BAB80051F45A /* ELWebService.xcodeproj */;
-				},
-				{
 					ProductGroup = CAF6395E1CA335D300260FB8 /* Products */;
 					ProjectRef = CAF6395D1CA335D300260FB8 /* WishList.xcodeproj */;
 				},
@@ -467,111 +269,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CAB862A01CA1BA990051F45A /* ELCodable.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELCodable.framework;
-			remoteRef = CAB8629F1CA1BA990051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862A21CA1BA990051F45A /* ELCodableTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELCodableTests.xctest;
-			remoteRef = CAB862A11CA1BA990051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862A91CA1BA9F0051F45A /* ELMaestro.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELMaestro.framework;
-			remoteRef = CAB862A81CA1BA9F0051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862AB1CA1BA9F0051F45A /* ELMaestroTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELMaestroTests.xctest;
-			remoteRef = CAB862AA1CA1BA9F0051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862B21CA1BAA50051F45A /* ELRouter.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELRouter.framework;
-			remoteRef = CAB862B11CA1BAA50051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862B41CA1BAA50051F45A /* ELRouterTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELRouterTests.xctest;
-			remoteRef = CAB862B31CA1BAA50051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862BC1CA1BAAB0051F45A /* ELLog.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELLog.framework;
-			remoteRef = CAB862BB1CA1BAAB0051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862BE1CA1BAAB0051F45A /* ELLogTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELLogTests.xctest;
-			remoteRef = CAB862BD1CA1BAAB0051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862C01CA1BAAB0051F45A /* ELLog.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELLog.framework;
-			remoteRef = CAB862BF1CA1BAAB0051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862C91CA1BAB20051F45A /* ELFoundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELFoundation.framework;
-			remoteRef = CAB862C81CA1BAB20051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862CB1CA1BAB20051F45A /* ELFoundationTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELFoundationTests.xctest;
-			remoteRef = CAB862CA1CA1BAB20051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862CD1CA1BAB20051F45A /* ELFoundation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELFoundation.framework;
-			remoteRef = CAB862CC1CA1BAB20051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862CF1CA1BAB20051F45A /* ELFoundation_osxTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELFoundation_osxTests.xctest;
-			remoteRef = CAB862CE1CA1BAB20051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862D61CA1BAB80051F45A /* ELWebService.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ELWebService.framework;
-			remoteRef = CAB862D51CA1BAB80051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAB862D81CA1BAB80051F45A /* ELWebServiceTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ELWebServiceTests.xctest;
-			remoteRef = CAB862D71CA1BAB80051F45A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		CAF639631CA335D300260FB8 /* WishList.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
